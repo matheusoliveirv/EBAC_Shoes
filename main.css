@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #3868D6;
+    color: #FFF;
+    padding: 1rem 25rem;
+}
+.links{
+    display: flex; 
+}
+.links li{
+    list-style: none;
+}
+.links a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFF;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 70rem;
+    gap: 5rem;
+    padding-top: 3rem;
+}
+.container img{
+    width: 30rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+}
+.text h1,
+.produtos h1{
+    color: #3868D6;
+}
+h1{
+    font-style: italic;
+}
+.produtos{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 70rem;
+    gap: .9rem;
+}
+.container-flex{
+    display: flex;
+}
+.lista-veiculos{
+    padding-top: 2rem;
+}
+.lista-veiculos li{
+    list-style: none;
+    max-width: 25%;
+    margin-bottom: 24px;
+}
+.lista-veiculos li img{
+    max-width: 100%;
+}
+.lista-veiculos li h3{
+    margin: 16px 0;
+}
+button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #3868D6;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+ul{
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 640px){
+    header{
+        padding: 1rem;
+    }
+    .container{
+        display: block;
+        width: 100vw;
+        padding: 2rem;
+    }
+    .container img{
+        width: 100%;
+    }
+    .text{
+        margin-top: 3rem;
+    }
+    .produtos{
+        display: block;
+        padding: 2rem;
+    }
+    ul,
+    .container-flex{
+        display: block;
+    }
+    .lista-veiculos li{
+        max-width: 100%;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    header{
+        padding: 1rem 3rem;
+    }
+    .container{
+        display: block;
+        width: 100vw;
+        padding: 2rem;
+    }
+    .container img{
+        width: 100%;
+    }
+    .text{
+        margin-top: 3rem;
+    }
+    .produtos{
+        display: block;
+        padding: 2rem;
+    }
+    .lista-veiculos li{
+        min-width: 48%;
+        margin-bottom: 5rem;
+    }
+    .lista-veiculos{
+        flex-wrap: wrap;
+    }
+}
